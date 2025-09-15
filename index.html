@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Otlet – Nun Bakery & Pastry</title>
+  <style>
+    /* ====== Style Halaman ====== */
+   body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+
+  /* atur posisi gambar */
+  background: url('dowload.jpeg') no-repeat center 20%; /* awalnya center center */
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+    /* Overlay transparan supaya teks lebih jelas */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 105%;
+      height: 105%;
+      background: rgba(0,0,0,0.4); /* ubah angka 0.4 untuk tingkat gelap */
+      z-index: 0;
+    }
+
+    h1, p {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      margin: 0 0 20px 0;
+    }
+
+    .btn {
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 30px;
+      background: rgba(255,255,255,0.9);
+      color: #000;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ffffff;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Outlet – Nun Bakery & Pastry</h1>
+  <p>Pilih lokasi cabang yang terdekat dari anda:</p>
+
+  <a href="https://share.google/GYikbE3cPYGyI2Q3v" class="btn">📍 Nun Pusat Pondowo</a>
+  <a href="https://maps.app.goo.gl/kpJh2o6Uq1fPtLaU9?g_st=ac" class="btn">📍 Nun Seyegan</a>
+
+</body>
+</html>
